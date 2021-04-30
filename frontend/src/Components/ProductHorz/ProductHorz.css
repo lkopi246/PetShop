@@ -1,0 +1,115 @@
+.productContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.productImage {
+  width: 45rem;
+  height: 45rem;
+  background-color: lightsalmon;
+}
+
+.productInfo__mainText {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.productInfo__price {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+.productInfo__priceRuppeIcon {
+  margin-right: 0.5rem;
+}
+
+.productInfo__sizeCont {
+  margin-bottom: 4rem;
+  padding-top: 3rem;
+  border-top: 0.2rem dashed lightgrey;
+}
+
+.productInfo__sizeText {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.productInfo__sizeButton {
+  width: 4rem;
+  height: 4rem;
+  background: none;
+  border: 1px solid lightgrey;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.productCounter {
+  display: flex;
+  margin-bottom: 4rem;
+  padding-bottom: 3rem;
+  border-bottom: 0.2rem dashed lightgrey;
+}
+
+.productCounter__sizeText {
+  font-size: 2rem;
+  margin-right: 1.5rem;
+}
+
+.productCounter__MinusButton,
+.productCounter__PlusButton {
+  width: 3rem;
+  height: 3rem;
+  background: none;
+  border: 1px solid lightgrey;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.productCounter__digit {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.product__cartButton,
+.product__buyButton {
+  width: 15rem;
+  height: 5rem;
+  background: none;
+  border: 1px solid lightgrey;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.product__cartButton {
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
+
+.product__cartButton:hover {
+  background-color: white;
+  color: black;
+}
+
+.product_cartIcon {
+  transform: translateX(-1rem);
+  transition: 0.3s transform, 0.2s opacity;
+  opacity: 0;
+}
+
+.product__cartButton:hover .product_cartIcon {
+  transform: translateX(-0.5rem);
+  opacity: 1;
+}
+
+.product__buyButton {
+  background-color: orange;
+  color: white;
+  transition: 0.3s all;
+}
+
+.product__buyButton:hover {
+  background: white;
+  color: black;
+}

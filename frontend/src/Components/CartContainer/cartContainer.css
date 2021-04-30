@@ -1,0 +1,47 @@
+.cartContainer {
+  height: 100%;
+  width: 32rem;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transition: 0.5s transform;
+  transform: translateX(-100%);
+}
+
+.open {
+  transform: translateX(100%);
+  /* display: none; */
+}
+
+.cartHeader {
+  height: 5rem;
+  display: flex;
+
+  align-items: center;
+  background-color: lightsalmon;
+}
+
+.cartHeader_button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.cartHeader_heading {
+  font-size: 2rem;
+  flex-grow: 1;
+  text-align: center;
+}
+.cartList {
+  overflow: auto;
+  height: calc(100% - 10rem);
+  background: rgb(250, 249, 249);
+}
+
+.cartFooter {
+  height: 5rem;
+  background: lightsalmon;
+}

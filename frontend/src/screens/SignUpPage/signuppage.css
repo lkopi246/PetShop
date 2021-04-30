@@ -1,0 +1,45 @@
+.signUpPageContainer {
+  display: flex;
+  height: 100%;
+}
+.signUpContainer {
+  width: 50%;
+  height: 100vh;
+  padding: 1rem 5rem;
+}
+
+.signUpHeading {
+  margin-top: 5rem;
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.signUpContainer p {
+  font-size: 1.6rem;
+  text-align: right;
+}
+
+.signUpImageContainer {
+  width: 50%;
+  text-align: right;
+}
+
+.signUpImage {
+  width: 80%;
+  height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .signUpPageContainer {
+    flex-direction: column-reverse;
+  }
+  .signUpContainer {
+    width: 100%;
+    height: 70%;
+  }
+  .signUpImageContainer {
+    width: 100%;
+    height: 30%;
+  }
+}

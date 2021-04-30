@@ -1,0 +1,61 @@
+.header {
+  height: 10rem;
+  /* background: lightgreen; */
+  font-size: 1.6rem;
+}
+
+.header_top {
+  height: 6rem;
+  /* background: lightsalmon; */
+  display: flex;
+  border-bottom: 1px solid lightslategray;
+}
+
+.header_logoCont {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid lightslategray;
+  padding: 0 1rem;
+}
+
+.header_logo {
+  width: 4rem;
+  height: 4rem;
+  background-color: lightseagreen;
+}
+
+.header_extrainfo {
+  flex-grow: 1;
+}
+
+.header_email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid lightslategray;
+  /* margin-right: 1rem; */
+  padding: 0 1rem;
+  cursor: pointer;
+}
+.styledHeaderButton {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.header_user {
+  width: 5rem;
+  border-right: 1px solid lightslategray;
+  color: black;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 2rem; */
+}
+
+.header_cart {
+  width: 8rem;
+}
