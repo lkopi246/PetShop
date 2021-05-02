@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import axios from "axios";
 
 import "./signup.css";
 const SignUp = () => {
+  const history = useHistory();
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -17,11 +19,13 @@ const SignUp = () => {
   };
   const onHandleSignUpSubmit = (event) => {
     event.preventDefault();
-    // console.log(email, username, password);
     axios
-      .post("http://localhost:5000/user", { email, username, password })
+      .post("http://localhost:5000/user/signup", { email, username, password })
       .then((res) => {
-        console.log(res);
+        setEmail("");
+        setUsername("");
+        setPassword("");
+        history.push("/");
       })
       .catch((err) => {
         console.log(err);
